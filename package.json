@@ -1,0 +1,23 @@
+{
+  "name": "dmm-hide-items",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd shells/chrome && webpack --mode development --watch --hide-modules --devtool source-map",
+    "build": "cd shells/chrome && webpack --mode production --progress --hide-modules",
+    "zip": "cd shells && zip -r -FS ../dist/chrome.zip chrome -x *src/* -x *webpack.config.js",
+    "release": "node release.js && npm run build && npm run zip"
+  },
+  "author": "soarflat",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  },
+  "dependencies": {}
+}
