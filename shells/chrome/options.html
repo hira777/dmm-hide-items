@@ -3,13 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DMM EXCLUDE VR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>DMM HIDE ITEMS</title>
 </head>
 <body>
-  <label class="checkbox">
-    <input id="hide-items" type="checkbox">
-    キーワードに該当した商品を非表示にする
-  </label>
+  <div class="container">
+    <ul class="collection with-header">
+      <li class="collection-header">
+        <h4>Options</h4>
+      </li>
+      <li class="collection-item">
+        <div>キーワードに該当した商品を非表示にする
+          <div class="switch secondary-content">
+            <label>
+              Off
+              <input id="hide-items" type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
   <script src="build/options.js"></script>
 </body>
 </html>
