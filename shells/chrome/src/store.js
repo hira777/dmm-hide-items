@@ -39,7 +39,9 @@ function getInitialStateStorage() {
     '尿',
     '大便',
     '排泄',
-    '五十路',
+    'オナラ',
+    'オシッコ',
+    'ウンコ',
   ];
   storage[ROOT_KEY][OPTIONS_KEY][IS_HIDE_KEY] = true;
 
